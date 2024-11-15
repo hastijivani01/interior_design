@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- https://bridge437.qodeinteractive.com/?_ga=2.90958297.258108018.1714364520-649644729.1714364520 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            font-family: sarabun, sans-serif;
+            font-weight: 400;
+        }
+
+        .pd {
+            padding: 7px;
+
+        }
+
+        .d-Perfect {
+            width: 50%;
+            letter-spacing: 1px;
+            background-color: #f9f9f9;
+            font-family: sarabun, sans-serif;
+            padding: 225.942px 75.31px 225.942px 101.67px;
+            color: black;
+
+        }
+
+        .d-Perfect h1 {
+            font-size: 70px;
+            line-height: 82px;
+            font-weight: 500;
+        }
+
+        .d-parfect2 {
+            background-color: #fff;
+            padding: 30px 45px 30px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            line-height: 26px;
+            position: relative;
+
+        }
+
+        .active:hover {
+            color: red !important;
+            text-decoration: underline 2px;
+        }
+
+        .dropdown-toggle {
+            color: #717171 !important;
+            padding: 0 47px 0 25px;
+        }
+
+        .dropdown-item {
+            color: #717171 !important;
+            height: 40px;
+
+        }
+
+        .dropdown-item:hover {
+            color: white !important;
+            background-color: rgb(158, 189, 212) !important;
+        }
+
+        .serch-place {
+            padding-top: 50px;
+        }
+
+        .btn {
+            line-height: 1em;
+            padding-top: 22px;
+            padding-bottom: 20px;
+            border: hidden;
+            color: rgb(0, 0, 0) !important;
+            background-color: #c4e8e9 !important;
+            border-radius: 50px;
+        }
+
+        .logo-col {
+            color: black !important;
+        }
+
+        .you-serch {
+            padding-top: 100px;
+        }
+
+        .you-serch h3 {
+            font-size: 40px;
+            line-height: 46px;
+
+            font-weight: 500;
+            letter-spacing: -.1px;
+        }
+
+        .center {
+            margin-left: 100px;
+            padding: 30px 0 20px;
+        }
+
+        .black {
+            position: absolute;
+            padding-top: 10px;
+            margin-left: 10px;
+        }
+
+        .full-img {
+            width: 50%;
+            height: 915px;
+            position: absolute;
+        }
+
+        .btn button :hover {
+            background-color: red !important;
+            color: white;
+        }
+
+        .Popular {
+            padding-top: 180px;
+            font-size: 50px;
+            font-weight: 500;
+            text-align: center;
+            line-height: 2px;
+            letter-spacing: 1px;
+        }
+
+        h6 {
+            color: #575757;
+            font-size: 22px;
+        }
+
+        .container {
+            max-width: 1440px;
+        }
+
+        .pro-img {
+            padding-top: 20px;
+            position: relative;
+            /* margin-left: 10px; */
+        }
+
+        .img-text {
+            background-color: #ff3e3e;
+            position: absolute;
+            top: 30px;
+            /* margin-left: 10px; */
+            color: white;
+        }
+
+        .img-text2 {
+            position: absolute;
+            top: 290px;
+            margin-left: 10px;
+            background-color: white;
+            padding: 5px 10px;
+        }
+
+        .pro-text {
+            padding: 20px;
+        }
+
+        .pro-text:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        .pro-text2 {
+            color: #b6b6b6;
+            font-size: 15px;
+            padding: 10px;
+            margin: -30px;
+            margin-left: 10px;
+        }
+
+        .pro-icon {
+            margin-left: 15px;
+        }
+
+        .pro-icon2 {
+            margin-left: 100px;
+        }
+
+        .pro2 {
+            padding-top: 45px;
+        }
+
+        .load-more {
+            margin: -5px 0 0;
+            padding: 20px 50px;
+            line-height: 26px;
+            /* padding-top: 50px; */
+            border: hidden;
+            background-color: #C4E8E9;
+        }
+
+        .dreaming-about {
+            position: relative;
+        }
+
+        .dreaming-about-text {
+            position: absolute;
+            bottom: 15px;
+            color: white;
+            font-size: 40px;
+            margin-left: 10px;
+        }
+
+        .ml {
+            margin-left: 70px;
+            /* margin: auto; */
+        }
+
+        .home-img {
+
+            position: relative;
+        }
+
+        .home-img-text {
+            bottom: 70px;
+            font-size: 60px;
+            font-weight: 300;
+        }
+
+        .home-img-text2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .last-text {
+            font-size: 20px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .footer-top {
+            padding: 134px 0px 137px;
+            font-family: sarabun, sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: -.2px;
+            line-height: 22px;
+            font-weight: 400;
+            /* margin-left: 10px; */
+        }
+
+        .bg {
+            background-color: rgb(255, 247, 247);
+        }
+
+        .footer-top-img {
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .footer-top-text {
+            font-family: sarabun, sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: -.2px;
+            line-height: 22px;
+            font-weight: 400;
+            padding-right: 20%;
+            color: #717171;
+        }
+
+        .mr {
+            margin-right: 10px;
+        }
+
+        .footer-color {
+            color: #ff3e3e !important;
+        }
+
+        .footer-color:hover {
+            color: #575757 !important;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width:1025px) {
+            .full-img {
+                height: 1080px;
+            }
+
+            .img-text2 {
+                top: 210px;
+            }
+
+            .center {
+                margin-left: 60px;
+            }
+
+            .home-img-text {
+                font-size: 50px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class=" col-6  "><img src="./image/./website/home-image-1.png" class="full-img">
+                    <img src="./image/./website/logo-light.png" alt="" class="black" width="90px" />
+                </div>
+
+                <div class="col-6 d-Perfect ">
+
+                    <h1>Perfect place one click away.</h1>
+                    <div class="d-parfect2  ">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                            <div class="container-fluid">
+                                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                                    <ul class="navbar-nav ">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Apartment</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Condominium</a>
+                                        </li>
+
+                                        <!-- <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">House</a>
+                                    </li>  -->
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Office</a>
+                                        </li>
+                                    </ul>
+                                    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <hr>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Valencia
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Istanbul</a></li>
+                                <li><a class="dropdown-item" href="#">Lisbon</a></li>
+                                <li><a class="dropdown-item" href="#">London</a></li>
+                                <li><a class="dropdown-item" href="#">Siena</a></li>
+                                <li><a class="dropdown-item" href="#">Valencia</a></li>
+                            </ul>
+                        </li>
+
+                    </div>
+                    <div class="serch-place">
+                        <button type="button" class="btn btn-lg btn-primary" disabled>Search Places</button>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+        <div class="container-fluid">
+            <!-- <div class="container"> -->
+            <div class="row">
+                <div class="col-12 you-serch">
+                    <h3>You're searching for</h3>
+                    <h6> Our selection of the best places around the world</h6>
+
+                </div>
+                <div class="col-3   d-parfect2"><img src="./image/./website/type-1.png" class="center" alt="">
+                    <h5 style="text-align: center;">Apartment</h5>
+                </div>
+                <div class="col-3 d-parfect2"><img src="./image/./website/type-2.png" class="center" alt="">
+                    <h5 style="text-align: center;">Condominium</h5>
+                </div>
+                <div class="col-3  d-parfect2"><img src="./image/./website/type-3.png" class="center" alt="">
+                    <h5 style="text-align: center;">House</h5>
+                </div>
+                <div class="col-3  d-parfect2"><img src="./image/./website/type-4.png" class="center" alt="">
+                    <h5 style="text-align: center;">Office</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12  text-center">
+                    <h1 class="Popular">Popular properties</h1><br>
+                    <h6>Take a look at our selection of the best places around the world and pick yours</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-parfect2">
+        <!-- <div class="container"> -->
+        <div class="row">
+            <div class="col-4  pro-img  "><img src="./image/./website/property-image-6.jpg" width="100%" alt="">
+                <p class="img-text ">FOR RENT</p>
+                <p class="img-text2">$4.150</p>
+                <h5 class="pro-text">Atlanta Fine Homes</h5>
+                <h6 class="pro-text2">Valencia – Spain</h6><br>
+                <hr> <img class="pro-icon" src="./image/./website/icon-1.png" alt="">2<img class="pro-icon2"
+                    src="./image/./website/icon-3 (1).png" alt="">52m2
+            </div>
+
+            <div class="col-4 pro-img"><img src="./image/./website/property-image-5.jpg" width="100%" alt="">
+                <p class="img-text">FOR RENT</p>
+                <p class="img-text2">$4.150</p>
+                <h5 class="pro-text">Sunny Residence</h5>
+                <h6 class="pro-text2">Lisbon – Portugal</h6><br>
+                <hr> <img class="pro-icon" src="./image/./website/icon-1.png" alt="">2<img class="pro-icon2"
+                    src="./image/./website/icon-3 (1).png" alt="">52m2
+            </div>
+
+            <div class="col-4 pro-img"><img src="./image/./website/property-image-4.jpg" width="100%" alt="">
+                <p class="img-text">FOR RENT</p>
+                <p class="img-text2">$4.150</p>
+                <h5 class="pro-text">East Green Penthouse</h5>
+                <h6 class="pro-text2">London – England</h6><br>
+                <hr> <img class="pro-icon" src="./image/./website/icon-1.png" alt="">2<img class="pro-icon2"
+                    src="./image/./website/icon-3 (1).png" alt="">52m2
+            </div>
+        </div>
+        <div class="row pro2">
+            <div class="col-4  pro-img"><img src="./image/./website/property-image-3.jpg" width="100%" alt="">
+                <p class="img-text">FOR RENT</p>
+                <p class="img-text2">$4.150</p>
+                <h5 class="pro-text">Villa with Pool</h5>
+                <h6 class="pro-text2">Florence – Italy</h6><br>
+                <hr> <img class="pro-icon" src="./image/./website/icon-1.png" alt="">2<img class="pro-icon2"
+                    src="./image/./website/icon-3 (1).png" alt="">52m2
+            </div>
+
+            <div class="col-4 pro-img"><img src="./image/./website/property-image-2.jpg" width="100%" alt="">
+                <p class="img-text">FOR RENT</p>
+                <p class="img-text2">$4.150</p>
+                <h5 class="pro-text">Cozy Chateau</h5>
+                <h6 class="pro-text2">Florence – Italy</h6><br>
+                <hr> <img class="pro-icon" src="./image/./website/icon-1.png" alt="">2<img class="pro-icon2"
+                    src="./image/./website/icon-3 (1).png" alt="">52m2
+            </div>
+
+            <div class="col-4 pro-img"><img src="./image/./website/property-image-1.jpg" width="100%" alt="">
+                <p class="img-text">FOR RENT</p>
+                <p class="img-text2">$4.150</p>
+                <h5 class="pro-text">Sunny Boston Residence</h5>
+                <h6 class="pro-text2">Istanbul – Turkey</h6><br>
+                <hr> <img class="pro-icon" src="./image/./website/icon-1.png" alt="">2<img class="pro-icon2"
+                    src="./image/./website/icon-3 (1).png" alt="">52m2
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12  ">
+                    <div class="text-center" style="padding-top: 50px; margin-left: 30px;">
+                        <button type="button" class="btn btn-lg btn-primary load-more " disabled>Load more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pd">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 home-img"><img src="./image/./website/home-image-2.jpg" width="100%" height="100%"
+                        alt="">
+                    <h5 class="dreaming-about-text home-img-text">Explore the cities of the world</h5>
+                </div>
+                <div class="col-8 d-parfect2 flex-wrap">
+                    <div class="d-flex">
+                        <div class="col-4 "><img src="./image/./website/city-2.png" width="100%" alt="">
+                            <h5 class=" home-img-text2">Florence - (5)</h5>
+                        </div>
+                        <div class="col-4"><img src="./image/./website/city-1.png" width="100%" alt="">
+                            <h5 class="home-img-text2">Istanbul - (2)</h5>
+                        </div>
+                        <div class="col-4"><img src="./image/./website/city-6.png" width="100%" alt="">
+                            <h5 class="home-img-text2">Lisbon - (2)</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-4 "><img src="./image/./website/city-3.png" width="100%" alt="">
+                            <h5 class="home-img-text2">London - (6)</h5>
+                        </div>
+                        <div class="col-4"><img src="./image/./website/city-4.png" width="100%" alt="">
+                            <h5 class="home-img-text2">Siena - (0)</h5>
+                        </div>
+                        <div class="col-4"><img src="./image/./website/city-5.png" width="100%" alt="">
+                            <h5 class="home-img-text2">Valencia - (2)</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12  text-center">
+                    <h1 class="Popular">Latest added properties</h1><br>
+                    <h6>Take a look at our selection of the best places around the world and pick your perfect place
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-parfect2">
+        <div class="container">
+            <div class="row">
+                <div class="col-6  pro-img"><img src="./image/./website/property-image-8a.jpg" width="100%" height="70%"
+                        alt="">
+                    <p class="img-text">FOR RENT</p>
+                    <p class="img-text2">$4.150</p>
+                    <h5 class="pro-text">Big apartment in the city center</h5>
+                    <h6 class="pro-text2">London – England</h6><br>
+                    <hr> <img class="pro-icon" src="./image/./website/icon-1.png" alt="">2<img class="pro-icon2"
+                        src="./image/./website/icon-3 (1).png" alt="">52m2
+                </div>
+
+                <div class="col-6 pro-img"><img src="./image/./website/property-image-7a.jpg" width="100%" height="70%"
+                        alt="">
+                    <p class="img-text">FOR RENT</p>
+                    <p class="img-text2">$4.150</p>
+                    <h5 class="pro-text">Bright and sunny home</h5>
+                    <h6 class="pro-text2">London – England</h6><br>
+                    <hr> <img class="pro-icon" src="./image/./website/icon-1.png" alt="">2<img class="pro-icon2"
+                        src="./image/./website/icon-3 (1).png" alt="">52m2
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="serch-place">
+        <div class="text-center">
+            <button type="button" class="btn btn-lg btn-primary" disabled>Explor Newest</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 you-serch">
+                    <h3>Explore places you were dreaming about</h3>
+                    <h6>Make your stay unforgetable</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 dreaming-about"><img src="./image/./website/home-image-10.jpg" width="100%" alt="">
+                    <h5 class="dreaming-about-text">Glamping</h5>
+                </div>
+                <div class="col-6 d-parfect2 flex-wrap">
+                    <div class="d-flex">
+                        <div class="col-6 "><img src="./image/./website/image-1.jpg" width="95%" height="90%" alt="">
+                            <h5 class="pd">Historic cottages</h5>
+                        </div>
+                        <div class="col-6"><img src="./image/./website/image-2.jpg" width="95%" height="90%" alt="">
+                            <h5 class="pd">Tiny houses</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-6"><img src="./image/./website/property-image-1.jpg" width="95%" height="90%">
+                            <h5 class="pd">Outdoor experience</h5>
+                        </div>
+                        <div class="col-6"><img src="./image/./website/image-4.jpg" width="95%" height="90%" alt="">
+                            <h5 class="pd">Living remotely</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid " style="padding-top: 90px;">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-8 d-parfect2 flex-wrap">
+                    <div class="d-flex">
+                        <div class="col-4 "><img src="./image/./website/team-6.png" width="100%" alt="">
+                            <h5 class=" home-img-text2">Denise Patton</h5>
+                        </div>
+                        <div class="col-4"><img src="./image/./website/team-5.png" width="100%" alt="">
+                            <h5 class="home-img-text2">Gloria Silva</h5>
+                        </div>
+                        <div class="col-4"><img src="./image/./website/team-4.png" width="100%" alt="">
+                            <h5 class="home-img-text2">Derek Lamb</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-4 "><img src="./image/./website/team-3.png" width="100%" alt="">
+                            <h5 class="home-img-text2">Nettie Adams</h5>
+                        </div>
+                        <div class="col-4"><img src="./image/./website/team-2.png" width="100%" alt="">
+                            <h5 class="home-img-text2">Vincent Foster</h5>
+                        </div>
+                        <div class="col-4"><img src="./image/./website/team-1.png" width="100%" alt="">
+                            <h5 class="home-img-text2">Tabitha Rodriquez</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-4 home-img"><img src="./image/./website/home-image-15.jpg" width="100%" height="100%"
+                        alt="">
+                    <h5 class="dreaming-about-text home-img-text">The best service</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12  text-center "><img class="Popular"
+                        src="https://bridge437.qodeinteractive.com/wp-content/uploads/2021/06/testimonials.png" alt="">
+                    <h1 class="last-text">They made our home selling process easy and smooth! Their guidance and help
+                        was very much appreciated. We will definitely refer family and friends to them in the future.
+                    </h1><br>
+                    <h6>Jane Doe</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg ">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 footer-top"><img class="footer-top-img" src="./image/./website/footer-logo.png"
+                        alt="">
+                    <p class="footer-top-text">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.
+                    <p class="footer-top-text">Don’t forget to follow us on:</p>
+                    <p class="footer-top-text"><i class="fa-brands fa-twitter mr" style="color: #000000;"></i> <i
+                            class="fa-brands fa-facebook-f mr" style="color: #000000;"></i><i
+                            class="fa-brands fa-instagram mr" style="color: #000000;"></i><i
+                            class="fa-brands fa-youtube mr" style="color: #000000;"></i></p>
+                    </p>
+                </div>
+
+                <div class="col-4 footer-top">
+                    <h5>Company</h5>
+                    <p class="footer-color">About Us</p>
+                    <p class="footer-color">Testimonials</p>
+                    <p class="footer-color">News</p>
+                    <p class="footer-color">Contact</p>
+                </div>
+                <!-- <div class="col-4 footer-top"> <h5>Company</h5><p class="footer-color">About Us</p><p class="footer-color">Testimonials</p><p class="footer-color">News</p><p class="footer-color">Contact</p></div> -->
+
+                <div class="col-4 footer-top">
+                    <h5>Property Services</h5>
+                    <p class="footer-color">Holiday Rental</p>
+                    <p class="footer-color">Sale Properties</p>
+                    <p class="footer-color">Buyer Services</p>
+                    <p class="footer-color">Renovation Properties</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
